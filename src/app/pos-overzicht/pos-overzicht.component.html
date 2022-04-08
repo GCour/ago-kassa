@@ -1,0 +1,5 @@
+<div class="menu" *ngIf="productList.length > 0">
+    <ng-container *ngFor="let product of productList">
+        <ago-product [product]="product"></ago-product>
+    </ng-container>
+</div>

@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Frisdrank",
+    "url": "non-alcohol"
+  },
+  {
+    "id": 2,
+    "title": "Bieren",
+    "url": "alcohol"
+  },
+  {
+    "id": 3,
+    "title": "Warme dranken",
+    "url": "warm"
+  },
+  {
+    "id": 4,
+    "title": "Snacks",
+    "url": "snacks"
+  }
+]

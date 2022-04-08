@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Coca Cola",
+    "category": 1,
+    "price": 1.5,
+    "stock": 30,
+    "img": "coca-cola"
+  },
+  {
+    "id": 2,
+    "name": "Coca Cola Zero",
+    "category": 1,
+    "price": 1.5,
+    "stock": 30,
+    "img": "coca-cola-zero"
+  },
+  {
+    "id": 3,
+    "name": "Chips (zout)",
+    "category": 4,
+    "price": 1,
+    "stock": 15,
+    "img": "chips-zout"
+  }
+]

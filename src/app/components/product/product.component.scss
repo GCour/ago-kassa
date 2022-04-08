@@ -1,0 +1,73 @@
+@import '../../../theme/colors';
+
+.product {
+  display: flex;
+  flex-direction: column;
+
+  .order-amount {
+    font-size: 32px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, .32);
+    flex: 4;
+  }
+
+  .title {
+    font-size: 16px;
+    font-weight: 500;
+    color: $white; 
+    flex: 4;
+    letter-spacing: 1px;
+  }
+
+  .price {
+    font-size: 14px;
+    font-weight: 400;
+    color:rgba(255, 255, 255, .64);
+    letter-spacing: 1px;
+  }
+
+  .status {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+
+    &--alert {
+      border: 1px solid #EA332C;
+      background: #FFCCC7;
+    }
+
+    &--warning {
+      border: 1px solid #EAA72C;
+      background: #FFE3C7;
+    }
+
+    &--success {
+      border: 1px solid #2CEA66;
+      background: #C7FFD8;
+    }
+  }
+}
+
+.tile {
+  height: 100%;
+  position: relative;
+  border-radius: 4px;
+  padding: 20px;
+  background: $dark-blue;
+
+  &.active {
+    background: $gray;
+
+    .order-amount {
+      color: $white;
+    }
+  }
+
+  &.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}

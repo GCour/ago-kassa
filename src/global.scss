@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap');
+
+@import 'theme/mixins';
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  background: $bg;
+  font-family: 'Fira Sans', sans-serif;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: fixed;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+
+h1, h2, h3, p {
+  padding: 0;
+  margin: 0;
+}
+
+button:focus {
+  outline: none;
+}
+
+.loader-overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  position: absolute;
+  background: $bg;
+  
+  #loader {
+    width: 50px;
+  }
+
+  .loader-container {
+    align-self: center;
+    text-align: center;
+
+    input {
+      width: 50%;
+      font-size: 84px;
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid grey;
+      color: $white;
+
+      &:focus-visible {
+        border: none;
+        outline: none;
+      }
+
+      &:focus {
+        border-bottom: 2px solid $white;
+      }
+    }
+  }
+
+  .loader-action-panel {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    button {
+      margin-right: 20px;
+      padding: 16px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.menu {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: calc(100% - 20px);
+  flex-wrap: wrap;
+  align-content: flex-start;
+
+  ago-product {
+    flex-basis: calc(25% - 12px);
+    margin-bottom: 12px;
+    max-height: 33%;
+    height: 33%;
+    min-width: 123px;
+    margin-right: 12px;
+  }
+}

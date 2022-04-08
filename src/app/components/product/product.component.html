@@ -1,0 +1,7 @@
+<div class="tile product ion-activatable ripple-parent"
+    [ngClass]="isActive()" *ngIf="product" (click)="addProduct(product)">
+    <div class="order-amount">{{ orderAmount }}</div>
+    <div class="title">{{ product.name }}</div>
+    <div class="price">+&euro;{{ product.price | price }}</div>
+    <div class="status" [ngClass]="renderStatus(product)"></div>
+</div>
